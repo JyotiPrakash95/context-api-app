@@ -4,7 +4,7 @@ const ChildComponent = (props) => {
 
     return (<>
         <div style={outPot}>
-            <GrendPerent color={props.color} />
+            <GrendPerent />
         </div>
           </>)
 }

@@ -1,7 +1,11 @@
-const GrendPerent = (props) => {
+import { useContext } from "react";
+import { colorContext } from "../context";
+function GrendPerent() {
+    const color = useContext(colorContext);
+    console.log(color);
   return (
     <>
-          <h2 style={{ color: props.color }}>Color: {props.color}</h2>
+          <h2 style={{ color: color }}>Color: {color}</h2>
     </>
   );
 };
